@@ -1,4 +1,4 @@
-@extends('layout.master')
+@extends('layout.main')
 @section('judul_halaman', 'Halaman Fakultas')
 
 @section('content')
@@ -14,12 +14,12 @@
         </thead>
         <tbody>
             @foreach ($fakultas as $item)
-            <tr>
-                <td> {{ $item['nama_fakultas'] }}</td>
-                <td> {{ $item['nama_dekan'] }}</td>
-                <td> {{ $item['nama_wakil_dekan'] }}</td>
-            </tr>
-             @endforeach
+                <tr>
+                    <td> {{ $item['nama_fakultas'] }}</td>
+                    <td> {{ $item['nama_dekan'] }}</td>
+                    <td> {{ $item['nama_wakil_dekan'] }}</td>
+                </tr>
+            @endforeach
         </tbody>
     </table>
 @endsection

@@ -9,7 +9,7 @@ class Prodi extends Model
 {
     use HasFactory;
 
-    protected $table = 'prodis';
+    protected $table = 'prodi';
 
     public function fakultas()
     {
